@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - Cita Rasa Nusantara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="banner">
+        <div class="overlay">
+            <h1>Hubungi Kami</h1>
+            <p>Kritik, Saran, dan Pemesanan Katering</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="menu.html">Menu Favorit</a></li>
+            <li><a href="gallery.html">Galeri</a></li>
+            <li><a href="contact.html" class="active">Hubungi Kami</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="contact-wrapper">
+            <div class="contact-info">
+                <h2>Informasi Restoran</h2>
+                <p>Silakan hubungi kami untuk reservasi tempat atau pemesanan dalam jumlah besar.</p>
+                
+                <div class="info-item">
+                    <h3>📍 Alamat</h3>
+                    <p>Jl. Kuliner Nusantara No. 10, Serpong, Tangerang Selatan.</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>📞 Telepon / WA</h3>
+                    <p>+62 812-3456-7890</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>✉️ Email</h3>
+                    <p>info@citarasanusantara.com</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+    <h2>Form Reservasi & Pemesanan</h2>
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama sesuai identitas" required>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="email">Email Aktif</label>
+                <input type="email" id="email" name="email" placeholder="contoh@mail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="telp">WhatsApp/Telp</label>
+                <input type="tel" id="telp" name="telp" placeholder="08..." required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="layanan">Kategori Layanan</label>
+            <select id="layanan" name="layanan" required>
+                <option value="" disabled selected>Pilih kategori...</option>
+                <option value="reservasi">Makan di Tempat</option>
+                <option value="katering">Pesanan Katering</option>
+                <option value="event">Acara Khusus</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="tanggal">Waktu Pelaksanaan</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+            </div>
+            <div class="form-group">
+                <label for="jumlah">Porsi / Kapasitas</label>
+                <input type="number" id="jumlah" name="jumlah" min="1" placeholder="0">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Preferensi Lokasi:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="area" value="indoor"> Indoor</label>
+                <label><input type="radio" name="area" value="outdoor"> Outdoor</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Layanan Tambahan:</label>
+            <div class="checkbox-grid">
+                <label><input type="checkbox" name="extra" value="dekor"> Dekorasi</label>
+                <label><input type="checkbox" name="extra" value="pedas"> Ekstra Pedas</label>
+                <label><input type="checkbox" name="extra" value="alergi"> Info Alergi</label>
+                <label><input type="checkbox" name="extra" value="box"> Box Premium</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="pesan">Catatan Khusus</label>
+            <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan permintaan khusus Anda..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Kirim Data</button>
+    </form>
+</div>
+ 
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p id="jam-sekarang"></p>
+            <p>&copy; 2026 | Nama: <strong>NAMA ANDA</strong> | NIM: <strong>NIM ANDA</strong> | Kelas: <strong>KELAS ANDA</strong></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
